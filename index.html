@@ -1,317 +1,132 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>JK Design | AI Video Studio</title>
-    <meta name="description" content="JK Design — Premium AI Video Creation Studio">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JK Designs - AI Video Showcase">
+  <title>JK Designs | AI Videos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<!-- NAVIGATION -->
-
-<header class="navbar">
-    <div class="logo">
-        JK<span>DESIGN</span>
-    </div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#portfolio">AI Videos</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <a href="#contact" class="nav-button">Work With Me</a>
-</header>
-
-
-<!-- HERO -->
-
-<section id="home" class="hero">
+  <header class="hero">
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
 
     <div class="hero-content">
+      <!-- Put your logo in this folder and name it logo.png -->
+      <img src="logo.png" alt="JK Designs Logo" class="logo"
+           onerror="this.style.display='none'; document.querySelector('.fallback-logo').style.display='block';">
 
-        <p class="small-title">WELCOME TO JK DESIGN</p>
+      <div class="fallback-logo">JK <span>DESIGNS</span></div>
 
-        <h1>
-            WE CREATE
-            <span>AI VIDEOS</span>
-            THAT STAND OUT.
-        </h1>
+      <div class="eyebrow">AI VIDEOS</div>
 
-        <p class="hero-description">
-            Premium AI-powered videos, cinematic visuals and creative
-            digital experiences designed to bring your ideas to life.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#portfolio" class="gold-button">View My Work</a>
-            <a href="#contact" class="outline-button">Let's Work Together</a>
-        </div>
-
+      <!-- Replace this text with your own description -->
+      <p class="description">
+        Creative AI videos crafted to turn ideas into cinematic visual stories.
+        Explore our selected AI video examples below.
+      </p>
     </div>
-
-    <div class="hero-glow"></div>
-
-</section>
-
-
-<!-- PORTFOLIO -->
-
-<section id="portfolio" class="section">
-
-    <div class="section-heading">
-        <p>MY WORK</p>
-        <h2>AI VIDEO <span>PORTFOLIO</span></h2>
-        <div class="line"></div>
-    </div>
-
-
-    <div class="video-grid">
-
-        <!-- VIDEO 1 -->
-        <div class="video-card">
-
-            <div class="video-container">
-
-                <!-- Replace video1.mp4 with your video -->
-                <video controls poster="thumbnail1.jpg">
-                    <source src="video1.mp4" type="video/mp4">
-                </video>
-
-            </div>
-
-            <div class="video-info">
-                <h3>Cinematic AI Story</h3>
-                <p>AI Generated • Cinematic</p>
-            </div>
-
-        </div>
-
-
-        <!-- VIDEO 2 -->
-        <div class="video-card">
-
-            <div class="video-container">
-
-                <video controls poster="thumbnail2.jpg">
-                    <source src="video2.mp4" type="video/mp4">
-                </video>
-
-            </div>
-
-            <div class="video-info">
-                <h3>AI Product Advertisement</h3>
-                <p>AI Generated • Advertising</p>
-            </div>
-
-        </div>
-
-
-        <!-- VIDEO 3 -->
-        <div class="video-card">
-
-            <div class="video-container">
-
-                <video controls poster="thumbnail3.jpg">
-                    <source src="video3.mp4" type="video/mp4">
-                </video>
-
-            </div>
-
-            <div class="video-info">
-                <h3>Mythological AI Visuals</h3>
-                <p>AI Generated • Storytelling</p>
-            </div>
-
-        </div>
-
-
-        <!-- VIDEO 4 -->
-        <div class="video-card">
-
-            <div class="video-container">
-
-                <video controls poster="thumbnail4.jpg">
-                    <source src="video4.mp4" type="video/mp4">
-                </video>
-
-            </div>
-
-            <div class="video-info">
-                <h3>AI Cinematic Trailer</h3>
-                <p>AI Generated • Trailer</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about" class="about section">
-
-    <div class="about-content">
-
-        <p class="small-title">ABOUT JK DESIGN</p>
-
-        <h2>
-            TURNING
-            <span>IDEAS</span>
-            INTO VISUAL STORIES.
-        </h2>
-
-        <p>
-            JK Design is a creative AI video studio focused on producing
-            cinematic, engaging and visually powerful content.
-        </p>
-
-        <p>
-            From story concepts and AI-generated characters to cinematic
-            scenes, advertisements and social media videos, we transform
-            ideas into memorable visual experiences.
-        </p>
-
-        <a href="#contact" class="gold-button">Start a Project</a>
-
-    </div>
-
-</section>
-
-
-<!-- SERVICES -->
-
-<section id="services" class="section">
-
-    <div class="section-heading">
-
-        <p>WHAT I DO</p>
-
-        <h2>MY <span>SERVICES</span></h2>
-
-        <div class="line"></div>
-
-    </div>
-
-
-    <div class="services-grid">
-
-        <div class="service-card">
-            <div class="service-number">01</div>
-            <h3>AI Video Creation</h3>
-            <p>
-                Cinematic AI videos created from your ideas,
-                scripts or concepts.
-            </p>
-        </div>
-
-
-        <div class="service-card">
-            <div class="service-number">02</div>
-            <h3>AI Storytelling</h3>
-            <p>
-                Complete visual storytelling with characters,
-                environments and cinematic scenes.
-            </p>
-        </div>
-
-
-        <div class="service-card">
-            <div class="service-number">03</div>
-            <h3>AI Advertisements</h3>
-            <p>
-                Creative AI advertisements and promotional
-                videos for brands and businesses.
-            </p>
-        </div>
-
-
-        <div class="service-card">
-            <div class="service-number">04</div>
-            <h3>Social Media Videos</h3>
-            <p>
-                Short-form AI content for YouTube,
-                Instagram and other platforms.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section id="contact" class="contact section">
-
-    <div class="section-heading">
-
-        <p>LET'S CREATE</p>
-
-        <h2>START YOUR <span>PROJECT</span></h2>
-
-        <div class="line"></div>
-
-    </div>
-
-    <p class="contact-text">
-        Have an idea for an AI video?
-        Let's turn your concept into something extraordinary.
-    </p>
-
-
-    <div class="contact-buttons">
-
-        <!-- CHANGE THESE LINKS -->
-
-        <a href="mailto:your@email.com" class="gold-button">
-            Email Me
-        </a>
-
-        <a href="https://wa.me/910000000000" class="outline-button">
-            WhatsApp
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <div class="footer-logo">
-        JK<span>DESIGN</span>
-    </div>
-
-    <p>
-        © 2026 JK Design. All Rights Reserved.
-    </p>
-
-    <p class="footer-tagline">
-        AI • Creativity • Visual Storytelling
-    </p>
-
-</footer>
-
-
-<script src="script.js"></script>
-
+  </header>
+
+  <main>
+    <section class="portfolio">
+      <div class="section-heading">
+        <div class="eyebrow">PORTFOLIO</div>
+        <h1>AI VIDEO <span>EXAMPLES</span></h1>
+        <p>Watch our selected AI video creations.</p>
+      </div>
+
+      <div class="video-grid">
+
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls controlsList="nodownload noplaybackrate"
+                   disablePictureInPicture playsinline preload="metadata">
+              <source src="video1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-info">
+            <span>01</span>
+            <h2>AI Cinematic Story</h2>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls controlsList="nodownload noplaybackrate"
+                   disablePictureInPicture playsinline preload="metadata">
+              <source src="video2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-info">
+            <span>02</span>
+            <h2>AI Brand Advertisement</h2>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls controlsList="nodownload noplaybackrate"
+                   disablePictureInPicture playsinline preload="metadata">
+              <source src="video3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-info">
+            <span>03</span>
+            <h2>AI Visual Storytelling</h2>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls controlsList="nodownload noplaybackrate"
+                   disablePictureInPicture playsinline preload="metadata">
+              <source src="video4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-info">
+            <span>04</span>
+            <h2>AI Cinematic Visual</h2>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls controlsList="nodownload noplaybackrate"
+                   disablePictureInPicture playsinline preload="metadata">
+              <source src="video5.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-info">
+            <span>05</span>
+            <h2>AI Product Video</h2>
+          </div>
+        </article>
+
+        <article class="video-card">
+          <div class="video-frame">
+            <video controls controlsList="nodownload noplaybackrate"
+                   disablePictureInPicture playsinline preload="metadata">
+              <source src="video6.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-info">
+            <span>06</span>
+            <h2>AI Short Film</h2>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">JK <span>DESIGNS</span></div>
+    <p>AI VIDEOS • CREATIVE VISUALS • STORYTELLING</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-```
