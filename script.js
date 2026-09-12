@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Only one video plays at a time.
+  // Play only one video at a time.
   const videos = document.querySelectorAll("video");
 
   videos.forEach((video) => {
@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
+    // Disable right-click on video elements.
     video.addEventListener("contextmenu", (event) => {
       event.preventDefault();
     });
@@ -18,17 +19,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
 
-  menuToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
     });
-  });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
 
   // Scroll reveal animations.
   const revealItems = document.querySelectorAll(".reveal");
@@ -48,5 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     revealItems.forEach((item) => item.classList.add("visible"));
   }
 
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 });
