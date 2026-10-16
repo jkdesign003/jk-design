@@ -9,36 +9,15 @@ a{color:inherit;text-decoration:none}.site-header{min-height:100vh;border-bottom
 @media(max-width:900px){.nav-links{position:absolute;top:74px;right:20px;width:260px;padding:14px;display:none;flex-direction:column;gap:2px;border:1px solid var(--border);border-radius:10px;background:#080808}.nav-links.open{display:flex}.nav-links a{padding:13px}.menu-toggle{display:block}.services-grid{grid-template-columns:repeat(2,1fr)}.category-heading{align-items:flex-start;flex-direction:column}.starting-price{text-align:left}}
 @media(max-width:680px){.container{width:calc(100% - 28px)}.section{padding:85px 0}.hero{padding:55px 0 75px}.hero-logo-wrap,.hero-logo{width:145px;height:145px}.hero-logo-wrap:before{inset:-11px}.hero h1{font-size:clamp(42px,15vw,72px)}.hero h2{font-size:15px}.hero-text{font-size:13px}.video-grid,.pricing-grid,.services-grid{grid-template-columns:1fr}.category-block+.category-block{margin-top:75px}.category-heading h3{font-size:24px}.price-card{padding:29px;min-height:auto}.footer-inner{flex-wrap:wrap}.footer-inner>a{width:100%}}
 
-/* JK Designs — First Normal AI Video: vertical 9:16 */
-
-/* Target only the first Normal AI video card */
-#ai-videos .category-block:nth-of-type(2)
-.video-card:first-child .video-frame {
-    width: 100%;
-    max-width: 360px;
-    aspect-ratio: 9 / 16;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    background: #000;
+/* Only the first Normal AI Video: vertical 9:16 */
+#ai-videos .category-block:nth-of-type(2) .video-card:first-child .video-frame {
+  aspect-ratio: 9 / 16;
 }
 
-/* Fit the video inside the vertical frame */
-#ai-videos .category-block:nth-of-type(2)
-.video-card:first-child .video-frame video {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    background: #000;
+#ai-videos .category-block:nth-of-type(2) .video-card:first-child .video-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-/* Mobile screens */
-@media (max-width: 680px) {
-    #ai-videos .category-block:nth-of-type(2)
-    .video-card:first-child .video-frame {
-        width: 100%;
-        max-width: 320px;
-        aspect-ratio: 9 / 16;
-    }
-}
+
